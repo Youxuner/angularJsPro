@@ -1,0 +1,14 @@
+<!-- <div class="container">
+    id: <input type="number" name="id" id="ng-model">
+    <button type="button" ng-clik="$ctrl.userDetail(id)">Dimostra</button>
+</div> -->
+
+<!-- <div class="container" ng-show="$ctrl.toShow">
+    <p>{{user.name}} {{user.id}}</p>
+    <p>{{user.email}}</p>
+</div> -->
+
+<div class="container">
+    <p>{{$ctrl.user.name}} - {{$ctrl.user.id}}</p>
+    <a href="mailto:{{$ctrl.user.email}}">{{$ctrl.user.email}}</a>
+</div>

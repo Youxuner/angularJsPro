@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="dist/styles/main.css"> -->
+    <title>Teaching AngularJS</title>
+</head>
+<body ng-app="App">
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">AngularJS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="users">Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="arena">Arena</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="todos">Todos</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
+    </div>
+  </nav>
+  <!-- <div class="jumbotron" ng-controller="HomeController as c">
+    <div class="container">
+      <h1 class="display-3" app-improved-highlight highlight-color="orange">{{ c.title }}</h1>
+      <p>{{ c.subtitle }}</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">I'm a button (:</a></p>
+    </div>
+  </div>
+  <div class="container" ng-controller="MyController as mc">
+    <div>
+      <p>{{ value }}</p>
+      <button class="btn btn-primary" ng-click="handleCounter(true)" ng-if="value < 10">+</button>
+      <button class="btn btn-primary" ng-click="handleCounter(false)">-</button>
+    </div>
+    <div ng-controller="OtherController">
+      {{ value }}
+    </div>
+  </div>
+
+  
+  <app-highlight text="'ciao sdada'"></app-highlight> -->
+  <!-- <app-users-list></app-users-list>
+  <app-arena></app-arena> -->
+  <!-- <app-user-detail id=1></app-user-detail> -->
+  <!-- <app-todos></app-todos> -->
+  <ui-view></ui-view>
+
+    <script src="dist/bundle.js"></script>
+</body>
+</html>

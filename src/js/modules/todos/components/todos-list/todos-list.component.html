@@ -1,0 +1,20 @@
+<h1>Todo List Component</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>userId</th>
+            <th>id</th>
+            <th>title</th>
+            <th>completed</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="todo in $ctrl.todos">
+            <td>{{todo.userId}}</td>
+            <td>{{todo.id}}</td>
+            <td>{{todo.title}}</td>
+            <td>{{todo.completed}}</td>
+        </tr>
+    </tbody>
+</table>

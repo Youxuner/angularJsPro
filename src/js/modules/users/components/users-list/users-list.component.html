@@ -1,0 +1,15 @@
+<p>User List</p>
+{{ $ctrl.users.length }}
+
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr app-users-list-row="{{user}}" ng-repeat="user in $ctrl.users"></tr>
+    </tbody>
+</table>

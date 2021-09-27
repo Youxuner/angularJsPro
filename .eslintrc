@@ -1,0 +1,37 @@
+{
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "sourceType": "module"
+    },
+  
+    "env": {
+      "es6": true,
+      "node": true
+    },
+  
+    "plugins": [
+      "import",
+      "node",
+      "prettier",
+      "promise",
+      "standard"
+    ],
+
+    "globals": {
+      "document": false,
+      "navigator": false,
+      "window": false
+    },
+
+    "extends": [
+      "standard",
+      "plugin:flowtype/recommended",
+      "plugin:react/recommended",
+      "plugin:unicorn/recommended",
+      "prettier",
+      "prettier/standard"
+    ]
+  }
